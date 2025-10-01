@@ -2,10 +2,59 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Zentha</title>
+    <link rel="stylesheet" th:href="@{/css/global.css}">
 </head>
 <body>
-    <!--/*@thymesVar id="message" type="string"*/-->
-    <h1 th:text="${message}">Hello World</h1>
+
+<!-- INCLUDE NAVBAR -->
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+
+<!-- HERO -->
+<header class="hero">
+    <h1 class="title">Zentha</h1>
+    <p class="subtitle">Explore the Future. Feel the Vibe.</p>
+    <button class="cta">Get Started</button>
+</header>
+
+<!-- ABOUT -->
+<section class="about scroll-fade" id="about">
+    <h2 class="section-title">About Zentha</h2>
+    <p class="section-text">
+        Zentha is a creative digital playground where design, animation, and interaction converge.
+        Every element is alive, breathing with gradients, movement, and flow.
+        It’s not just a site — it’s an experience.
+    </p>
+</section>
+
+<!-- PARALLAX SHOWCASE -->
+<section class="parallax scroll-fade">
+    <h2 class="section-title">The Zentha Flow</h2>
+    <p class="section-text">
+        Zentha is a canvas for motion, gradients, and vibes that move with you.
+    </p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery scroll-slide" id="gallery">
+    <div class="gallery-item">✨</div>
+    <div class="gallery-item">🌈</div>
+    <div class="gallery-item">💎</div>
+    <div class="gallery-item">⚙️</div>
+    <div class="gallery-item">🎶</div>
+    <div class="gallery-item">🌍</div>
+</section>
+
+<!-- QUOTE SECTION -->
+<section class="quote scroll-fade" id="quote">
+    <blockquote>"Design is intelligence made visible — Zentha makes it alive."</blockquote>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Zentha — Made with vibes ✨</p>
+</footer>
+
+<script th:src="@{/js/animations.js}"></script>
 </body>
 </html>

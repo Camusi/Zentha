@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zentha.com/sitemap.xml

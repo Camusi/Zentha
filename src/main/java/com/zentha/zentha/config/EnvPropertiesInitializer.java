@@ -13,7 +13,6 @@ public class EnvPropertiesInitializer implements ApplicationContextInitializer<C
     @Override
     public void initialize(ConfigurableApplicationContext context) {
         Dotenv dotenv = Dotenv.configure()
-                .directory("Zentha")
                 .filename("env.properties")
                 .ignoreIfMissing()
                 .load();

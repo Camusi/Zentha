@@ -1,6 +1,6 @@
 ## Zentha
 
-# Tech Stack:
+Tech Stack:
 - Gradlew
 - Thymeleaf
 - Springboot
